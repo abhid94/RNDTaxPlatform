@@ -1,0 +1,23 @@
+{
+  "name": "rndtaxplatform",
+  "version": "1.0.0",
+  "description": "A platform for R&D tax",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhid94/RNDTaxPlatform.git"
+  },
+  "author": "abhid94",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhid94/RNDTaxPlatform/issues"
+  },
+  "homepage": "https://github.com/abhid94/RNDTaxPlatform#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
