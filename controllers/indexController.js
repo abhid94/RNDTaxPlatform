@@ -65,7 +65,7 @@ module.exports = function(app) {
                       console.log(result);
                   });
               } catch (e){
-                  res.json({error_code:1,err_desc:"Corupted excel file"});
+                  res.json({error_code:1,err_desc:"Corrupted excel file"});
               }
           })
 
@@ -75,9 +75,8 @@ module.exports = function(app) {
   // use res.render to load up an ejs view file
   // index page
   app.get('/', function(req, res) {
-    res.sendFile(__dirname + "/index.ejs");
+    //res.sendFile(__dirname + "/index.ejs");
     res.render('pages/index');
-
   });
 
 
