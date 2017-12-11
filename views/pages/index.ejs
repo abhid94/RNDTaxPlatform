@@ -15,13 +15,19 @@
           <h1>Bootstrap starter template</h1>
           <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
           <h2>Variable</h2>
-          <p><%= tagline %></p>
+          <p><Example Text</p>
           <h2>Loop</h2>
           <ul class="list-group">
-            <% drinks.forEach(function(drink) { %>
-              <li class="list-group-item"><%= drink.name %> - <%= drink.drunkness %></li>
-            <% }); %>
+              <li class="list-group-item">Example List</li>
           </ul>
+          <form id        =  "uploadForm"
+                enctype   =  "multipart/form-data"
+                action    =  "upload"
+                method    =  "post"
+            >
+            <input type="file" name="file" />Upload
+            <input type="submit" value="Upload" name="submit">
+            </form>
         </div>
 
       </main><!-- /.container -->
@@ -29,7 +35,6 @@
       <footer>
         <% include ../partials/footer %>
       </footer>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
