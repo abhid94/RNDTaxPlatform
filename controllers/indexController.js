@@ -61,8 +61,9 @@ module.exports = function(app) {
                       if(err) {
                           return res.json({error_code:1,err_desc:err, data: null});
                       }
-                      res.json({data: result});
-                      console.log(result);
+                      res.json(result);
+
+                      //console.log(result[1]);
                   });
               } catch (e){
                   res.json({error_code:1,err_desc:"Corrupted excel file"});
@@ -70,7 +71,6 @@ module.exports = function(app) {
           })
 
       });
-
 
   // use res.render to load up an ejs view file
   // index page
